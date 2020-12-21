@@ -51,7 +51,7 @@ function pariDispariFinale (a) {
 
 // verdetto finale
 
-if (pariDispari == "pari" && verdetto == 0) {
+if ((pariDispari == "pari" && verdetto == 0) || (pariDispari == "dispari" && verdetto != 0)) {
     document.getElementById('verdetto_finale').innerHTML = "Complimenti hai vinto!!"
 } else {
     document.getElementById('verdetto_finale').innerHTML = "Hai perso";
